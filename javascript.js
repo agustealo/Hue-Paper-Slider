@@ -6,7 +6,7 @@
  * Lightweight, dependency free, yet riched with features you'd expect form a premium slider
  * 
  */
-var time = 4000;
+var time = 4000; // Set autoplay timer, 1 secound = 1000
 var hueIndex = 0;
 var slides, indicators, i,c=0;
 
@@ -29,9 +29,6 @@ function hueSlider() {
   document.getElementsByClassName("counter")[0].innerText = hueIndex + " / " + slides.length; // Show slide count, ie. [1/3]
   
   // Setup the indicator
-  for (i = 0; i < indicators.length; i++) { 
-    indicators[i].className = indicators[i].className.replace(" active", ""); // Remove .active from all indicator tags. 
-  }
   var indicatorItems = document.getElementById("indicator-wrapper");
   c++;
   if (c<slides.length){ // Condition makes sure indicator count isn't more than the amount of slides in slider.
@@ -41,6 +38,9 @@ function hueSlider() {
       if (c==1){ indicators.className += " active"; } // On first loop only, add "active" once to the first indicator's tagg, indicating first active slide
       indicatorItems.innerHTML += '<span class="indicator" onclick="indicateSlidePosition(' + c + ')">&#9635;</span>'; // Add indicator's html stuff for each slide
   }
+}
+for (i = 0; i < indicators.length; i++) { 
+  indicators[i].className = indicators[i].className.replace(" active", ""); // Toggle .active from non-active indicator tags. 
 }
   indicators[hueIndex - 1].className += " active";
   setTimeout(hueSlider, time); // Adds autoplay feature to slide
