@@ -2,6 +2,9 @@
 
 Hue Paper Slider is a no nonesense
 Built using pure JavaScript, CSS, and HTML5, no third party dependencies.
+
+![Hue Slider Screenshot](../assets/Hue-Slider.jpg?raw=true)
+
 [![Hue Slider Screenshot](http://agustealo.com/wp-content/uploads/2020/01/Hue-Slider.jpg)]()
 
 ## Setup
