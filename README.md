@@ -1,6 +1,6 @@
 # Hue-Paper-Slider
 
-![Paper Logo](../assets/Paper-Logo-Blk.png?raw=true)
+![Paper Logo](../assets/Paper-Slider-Logo.png?raw=true)
 
 Hue Paper Slider is a lightweight, no-frills, JavaScript slider. Built with :heart: using pure JavaScript, CSS, HTML, and no other third party dependencies.
 
