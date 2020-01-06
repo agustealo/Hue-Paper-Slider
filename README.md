@@ -5,9 +5,9 @@ Built using pure JavaScript, CSS, and HTML5, no third party dependencies.
 
 ## Setup
 
-1. Lets start by adding our CSS to the page header. ```html <link rel="stylesheet" href="style.css" /> ``` 
+1. Lets start by adding our CSS to the page header. ```html <link rel="stylesheet" href="hue-slider.css" /> ``` 
 
-2. Next add the JavaScript to the footer of our page. ```html <script src="javascript.js" ></script> ```
+2. Next add the JavaScript to the footer of our page. ```html <script src="hue-slider.js" ></script> ```
 
 3. The HTML markup for Hue Slider container.
 
