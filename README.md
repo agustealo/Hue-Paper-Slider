@@ -1,15 +1,14 @@
 # Hue-Paper-Slider
 
-Hue Paper Slider is a no nonesense
-Built using pure JavaScript, CSS, and HTML5, no third party dependencies.
+![Paper Logo](../assets/Paper-Logo-Blk.png?raw=true)
+
+Hue Paper Slider is a lightweight, no-frills, JavaScript slider. Built with :heart: using pure JavaScript, CSS, HTML, and no other third party dependencies.
 
 ![Hue Slider Screenshot](../assets/Hue-Slider.jpg?raw=true)
 
-[![Hue Slider Screenshot](http://agustealo.com/wp-content/uploads/2020/01/Hue-Slider.jpg)]()
-
 ## Setup
 
-1. Lets start by adding our CSS to the page header. ```html <link rel="stylesheet" href="hue-slider.css" /> ``` 
+1. Lets start by adding our CSS to the page header. Here is the typical method or whatever is best for your project ```html <link rel="stylesheet" href="hue-slider.css" /> ``` 
 
 2. Next add the JavaScript to the footer of our page. ```html <script src="hue-slider.js" ></script> ```
 
