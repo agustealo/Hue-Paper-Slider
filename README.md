@@ -2,6 +2,7 @@
 
 Hue Paper Slider is a no nonesense
 Built using pure JavaScript, CSS, and HTML5, no third party dependencies.
+[![Hue Slider Screenshot](http://agustealo.com/wp-content/uploads/2020/01/Hue-Slider.jpg)]()
 
 ## Setup
 
@@ -38,7 +39,8 @@ Built using pure JavaScript, CSS, and HTML5, no third party dependencies.
                 </header>
                 <p>
                   This is a paragraph...
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <input
                   class="hue-button"
@@ -58,4 +60,4 @@ If you like to contribute to the project, pull requests are welcome. For any maj
 
 ## License
 
-[GNU](https://choosealicense.com/licenses/gnu/)
+[GNU] (https://choosealicense.com/licenses/gpl-3.0/)
