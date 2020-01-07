@@ -29,20 +29,20 @@ Hue Paper Slider is a lightweight, no-frills, JavaScript slider. Built with :hea
 3. Now the HTML markup for adding a slide to the slider.
 
    ```html
-        
-        <!-- The slide markup-->
+        ...<!-- .hue-slider-container -->
+
+        <!-- The markup for adding a slide-->
         <div class="hue-slide-item fade">
           <div class="hue-slide">
             <img class="slide_img" src="img/hue-slider-img-1.jpg" />
             <div class="content-container">
               <div class="hue_content">
                 <header class="entry-header">
-                  <h1 class="entry-title">Add your own title</h1>
+                  <h1 class="entry-title">This is slide one</h1>
                 </header>
                 <p>
-                  This is a paragraph...
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat.
+                  This is a slide markup, use the same pattern to
+                  add additional slides to the slider.
                 </p>
                 <input
                   class="hue-button"
@@ -54,6 +54,8 @@ Hue Paper Slider is a lightweight, no-frills, JavaScript slider. Built with :hea
             </div>
           </div>
         </div>
+
+        ...<!-- .hue-slider-container -->
    ```
 
 ## Contributing
