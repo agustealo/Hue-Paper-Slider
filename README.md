@@ -4,6 +4,7 @@
 ![Paper Logo](../assets/Paper-Slider-Logo.png?raw=true)
 
 Hue Slider is a lightweight, no-frills, JavaScript slider. Built with :heart:
+
 Hue Slider is a web-based slideshow tool designed for displaying images, titles, and descriptions in a visually appealing and interactive way. It is built using HTML, CSS, and JavaScript, and is fully responsive to fit any screen size.
 
 Hue Slider is designed to be easy to use and customize. It includes features such as slide indicators, a slide counter, and previous and next buttons for easy navigation. It also includes options for adding your own images, titles, and descriptions, as well as customizing the colors and styles of the slider.
