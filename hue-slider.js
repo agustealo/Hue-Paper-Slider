@@ -1,5 +1,5 @@
 /**
- * Hue Paper Slider
+ * HueMan Slider
  * By Agustealo
  * URI www.agustealo.com
  * GitHub https://github.com/agustealo/Hue-Paper-Slider
