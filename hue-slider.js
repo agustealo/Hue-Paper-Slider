@@ -1,20 +1,15 @@
-const slides = document.querySelectorAll(".hue-slide-item");
+const slides = Array.from(document.querySelectorAll(".hue-slide-item"));
 const indicatorsWrapper = document.getElementById("indicator-wrapper");
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 const counter = document.querySelector(".hue-counter");
-const linkButtons = document.querySelectorAll(".hue-button");
+const linkButtons = Array.from(document.querySelectorAll(".hue-button"));
 
 let hueIndex = 0;
 let intervalId;
 
 function selectHueSlides(position) {
-  hueIndex += position;
-  if (hueIndex >= slides.length) {
-    hueIndex = 0;
-  } else if (hueIndex < 0) {
-    hueIndex = slides.length - 1;
-  }
+  hueIndex = (hueIndex + position + slides.length) % slides.length;
   showHueSlide();
 }
 
@@ -24,14 +19,12 @@ function indicateSlidePosition(index) {
 }
 
 function showHueSlide() {
-  for (const slide of slides) {
-    slide.classList.remove("active");
-  }
+  slides.forEach((slide) => slide.classList.remove("active"));
   slides[hueIndex].classList.add("active");
 
-  for (const indicator of indicatorsWrapper.children) {
-    indicator.classList.remove("active");
-  }
+  Array.from(indicatorsWrapper.children).forEach((indicator) =>
+    indicator.classList.remove("active")
+  );
   indicatorsWrapper.children[hueIndex].classList.add("active");
 
   counter.textContent = `${hueIndex + 1} / ${slides.length}`;
@@ -47,4 +40,13 @@ function stopHueSlider() {
   clearInterval(intervalId);
 }
 
-prevButton.addEventListener("click
+prevButton.addEventListener("click", () => selectHueSlides(-1));
+nextButton.addEventListener("click", () => selectHueSlides(1));
+linkButtons.forEach((button) =>
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    indicateSlidePosition(linkButtons.indexOf(button));
+  })
+);
+
+startHueSlider();
